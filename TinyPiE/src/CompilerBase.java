@@ -15,6 +15,9 @@ public class CompilerBase {
 	void emitI(String op, int imm) {
 		System.out.println("\t"+op+" #"+imm);
 	}
+	void emitR(String op, String r) {
+		System.out.println("\t"+op+" "+r);
+	}
 	void emitRR(String op, String rd, String rs) {
 		System.out.println("\t"+op+" "+rd+", "+rs);
 	}
